@@ -1,6 +1,14 @@
 package score;
 
+import java.util.Scanner;
+
 public class score {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Please input the score: ");
+		System.out.println("Yout letter grade is " + letterGrade(scanner.nextInt()) + ".");
+	}
+	
 	public static char letterGrade(int score) {
 		char grade;
 		if (score < 0 || score > 100)
